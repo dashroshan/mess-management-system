@@ -10,11 +10,13 @@ const dayToNum = { "monday": 0, "tuesday": 1, "wednesday": 2, "thursday": 3, "fr
 const columns = [
     {
         title: 'Meal',
-        dataIndex: 'meal'
+        dataIndex: 'meal',
+        width: 90,
     },
     {
         title: 'Rs',
         dataIndex: 'cost',
+        width: 50,
     },
     {
         title: 'Menu',
