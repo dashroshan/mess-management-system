@@ -1,0 +1,10 @@
+.outerWrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.innerWrapper {
+    grid-row-start: 1;
+    grid-column-start: 1;
+}

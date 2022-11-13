@@ -1,0 +1,21 @@
+.qrBody {
+    height: calc(100vh - 17vh);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading {
+    position: absolute;
+    display: flex;
+    background: white;
+    width: 256px;
+    height: 256px;
+    justify-content: center;
+    align-items: center;
+    font-size: 7rem;
+    color: #1f94ff;
+    transition: .5s;
+}

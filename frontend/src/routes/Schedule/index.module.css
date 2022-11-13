@@ -1,0 +1,26 @@
+.menuBody {
+    margin: 0 auto;
+}
+
+.menuBody>h1 {
+    text-align: center;
+}
+
+.menuBody>h1:nth-of-type(1) {
+    margin-top: 1rem;
+    margin-bottom: 1.4rem;
+}
+
+.menuBody>h1:nth-of-type(2) {
+    margin: 1.4rem 0;
+}
+
+.table {
+    margin: 0.5rem;
+}
+
+@media (min-width:750px) {
+    .menuBody {
+        max-width: 80rem;
+    }
+}

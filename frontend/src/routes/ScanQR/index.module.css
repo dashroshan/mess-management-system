@@ -1,0 +1,44 @@
+.qrreader {
+    display: none;
+}
+
+.card {
+    margin: 0.5rem;
+    max-width: 80rem;
+    width: 100%;
+    margin-top: 0.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card h1 {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.body {
+    display: flex;
+    justify-content: center;
+}
+
+.body:nth-last-of-type(n+2) {
+    margin-bottom: 1rem;
+}
+
+.icon {
+    font-size: 10rem;
+    margin: 0 auto;
+    width: 100%;
+    margin-bottom: 0.7rem;
+}
+
+.radio {
+    display: table;
+    margin: 0 auto;
+}
+
+.buttons {
+    display: table;
+    margin: 0 auto;
+}

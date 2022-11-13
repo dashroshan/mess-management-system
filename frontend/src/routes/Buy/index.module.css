@@ -1,0 +1,32 @@
+.table {
+    margin: 0.5rem;
+}
+
+.buyBody {
+    max-width: 80rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1:first-of-type {
+    margin-top: 1.2rem;
+}
+
+h1 {
+    text-transform: capitalize;
+    margin-top: 1.7rem;
+    margin-bottom: 0.8rem;
+}
+
+.buy {
+    margin-top: -0.4rem;
+    margin-bottom: 1.5rem;
+}
+
+.bought {
+    width: 100%;
+    height: calc(100vh - 17vh);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

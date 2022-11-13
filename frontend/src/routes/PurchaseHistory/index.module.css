@@ -1,0 +1,29 @@
+.menuBody {
+    margin: 0 auto;
+    margin-top: 1.5rem;
+}
+
+.menuBody>h1 {
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1.4rem;
+}
+
+.table {
+    margin: 0.5rem;
+}
+
+.buttons {
+    display: table;
+    margin: 0 auto;
+}
+
+.textweek {
+    display: inline;
+}
+
+@media (min-width:750px) {
+    .menuBody {
+        max-width: 80rem;
+    }
+}

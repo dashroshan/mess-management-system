@@ -1,0 +1,20 @@
+{
+    "name": "mess-portal",
+    "main": "index.js",
+    "scripts": {
+        "build": "cd frontend && npm run build"
+    },
+    "license": "ISC",
+    "dependencies": {
+        "compression": "^1.7.4",
+        "connect-mongo": "^3.2.0",
+        "cors": "^2.8.5",
+        "dotenv": "^8.2.0",
+        "express": "^4.17.1",
+        "express-session": "^1.17.1",
+        "mongoose": "^5.11.14",
+        "passport": "^0.4.1",
+        "passport-google-oauth20": "^2.0.0",
+        "razorpay": "^2.8.3"
+    }
+}

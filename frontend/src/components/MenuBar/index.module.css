@@ -1,0 +1,47 @@
+.nav {
+    position: fixed;
+    min-height: 100vh;
+    display: block;
+    background: white;
+    overflow-x: hidden;
+    width: 15rem;
+    padding-top: 0.8rem;
+}
+
+.navBtn {
+    margin-left: 15rem;
+    background: black;
+    color: white;
+    padding: 1.3rem 1.7rem;
+    font-size: 1.3rem;
+    width: fit-content;
+    cursor: pointer;
+}
+
+.navWrap {
+    position: fixed;
+}
+
+.logo {
+    width: 100%;
+    display: fixed;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4.63rem;
+    color: black;
+    font-size: 1.3rem;
+    font-weight: bold;
+    position: fixed;
+    box-shadow: 0 2px 1rem rgba(0, 0, 0, 0.05);
+}
+
+.gap {
+    display: block;
+    margin-top: 5rem;
+}
+
+.menu {
+    z-index: 999;
+}

@@ -1,0 +1,57 @@
+.card {
+    margin: 0.5rem;
+    max-width: 80rem;
+    width: 100%;
+    margin-top: 0.2rem;
+}
+
+.card h1 {
+    text-align: center;
+    margin-top: 0.2rem;
+    margin-bottom: 0.8rem;
+}
+
+.adminBody {
+    display: flex;
+    justify-content: center;
+}
+
+.adminBody:nth-last-of-type(n+2) {
+    margin-bottom: 1rem;
+}
+
+.table {
+    margin: 0.8rem 0;
+}
+
+.table:first-of-type {
+    margin-top: 0;
+}
+
+.table:last-of-type {
+    margin-bottom: 0;
+}
+
+.buttons {
+    display: table;
+    margin: 0 auto;
+}
+
+.userList {
+    height: 9.8rem;
+    overflow-y: scroll;
+}
+
+.userList::-webkit-scrollbar {
+    display: none;
+}
+
+.userListIndex {
+    font-weight: 500;
+    width: 2rem;
+    display: inline-block;
+    text-align: center;
+    padding-right: 0.9rem;
+    margin-right: 0.8rem;
+    border-right: 1px solid #f0f0f0;
+}
