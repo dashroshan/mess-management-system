@@ -1,4 +1,4 @@
-# MESS PORTAL
+# [MESS PORTAL](https://mess.roshan.cyou)
 
 [**A D3 Fest Hackathon submission**](https://d3fest.tech)
 
@@ -91,7 +91,7 @@ Develop a solution for mess management. The solution should provide facilities t
 
   - **Scan QR code**
 
-    This allows to scan and verify the mess QR codes. After selecting the meal type, upon hovering over a mess QR code it shows a tick mark if the person has purchased coupon for the given meal on the given day. Or a cross mark if the person has not purchased the meal, or have already claimed it.
+    This allows to scan and verify the mess QR codes. After selecting the meal type, upon hovering the camera over a mess QR code it shows a tick mark if the person has purchased coupon for the given meal on the given day. Or a cross mark if the person has not purchased the meal, or have already claimed it.
 
     ![](/assets/scan_qr.jpg)
 
