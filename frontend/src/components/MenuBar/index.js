@@ -18,6 +18,7 @@ import {
 } from '@ant-design/icons';
 import { Menu, message } from 'antd';
 
+// Create and send a menu item with relative link
 const getItem = (label, link, icon, key) => {
     return (
         <Menu.Item key={key} icon={icon}>
@@ -26,6 +27,7 @@ const getItem = (label, link, icon, key) => {
     );
 }
 
+// Create and send a menu item with absolute link needed for signin and signout
 const getLoginItem = (label, link, icon, key) => {
     return (
         <Menu.Item key={key} icon={icon}>
@@ -38,6 +40,7 @@ export default function MenuBar() {
     const [open, setopen] = useState(false);
     const [status, setStatus] = useState(false);
 
+    // On load, get the loggedin and admin status and render the menu accordingly
     useEffect(() => {
         const fetchData = async () => {
             try {

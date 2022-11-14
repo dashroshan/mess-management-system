@@ -1,6 +1,7 @@
 import { motion, AnimatePresence } from "framer-motion";
 import classes from "./fade.module.css";
 
+// Fades from prop one to prop two, when prop one2Two is true
 export default function Fade(props) {
     return (
         <div className={classes.outerWrapper}>

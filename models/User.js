@@ -15,4 +15,5 @@ const UserSchema = new mongoose.Schema({
     }
 })
 
+// To be used by Passport to manage the google signins
 module.exports = mongoose.model('User', UserSchema)

@@ -5,8 +5,11 @@ import 'antd/dist/antd.min.css';
 import App from './App';
 import { BrowserRouter } from 'react-router-dom';
 
-// window.APIROOT = 'http://localhost:4000/';
+// Global variable. Switched to localhost for testing locally, and to / when
+// building and serving from node server
+
 window.APIROOT = '/';
+// window.APIROOT = 'http://localhost:4000/';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

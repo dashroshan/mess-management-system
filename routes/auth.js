@@ -1,8 +1,9 @@
+// Import required modules
 const express = require("express");
 const passport = require("passport");
 const router = express.Router();
 
-// To be used as the login button link
+// Signin button link
 router.get(
     "/signin",
     passport.authenticate(
@@ -14,7 +15,7 @@ router.get(
     )
 );
 
-// Send get request to logout
+// Signout button link
 router.get(
     "/signout",
     (req, res) => {

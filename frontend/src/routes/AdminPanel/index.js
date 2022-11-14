@@ -1,8 +1,6 @@
 import classes from './index.module.css';
 import { Button, Input, Card, Table, message } from 'antd';
-import {
-    SaveOutlined
-} from '@ant-design/icons'
+import { SaveOutlined } from '@ant-design/icons'
 import axios from "axios";
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
@@ -193,6 +191,7 @@ export default function AdminPanel() {
     useEffect(() => {
         fetchMenu();
     }, []);
+    // MENU END
 
     return (
         <>

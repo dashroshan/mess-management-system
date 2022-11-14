@@ -80,6 +80,7 @@ const BuyerSchema = mongoose.model("buyer", new mongoose.Schema({
     }
 }));
 
+// Get the user details, or if it doesn't exists, create a new user object
 module.exports.getBuyer = async function (email) {
     let charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ123456789";
     let randomStr = "";
@@ -173,6 +174,7 @@ module.exports.getBuyer = async function (email) {
     return Buyer;
 }
 
+// Resets the user secret and returns the updated user object
 module.exports.resetSecret = async function (email) {
     let charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ123456789";
     let randomStr = "";
@@ -185,6 +187,7 @@ module.exports.resetSecret = async function (email) {
     return Buyer;
 }
 
+// Check if the user's coupon is valid for the current day and meal
 module.exports.checkCoupon = async function (data) {
     const Buyer = await BuyerSchema.findOne({ email: data.email, secret: data.secret });
     if (Buyer == null) return false;
@@ -195,16 +198,19 @@ module.exports.checkCoupon = async function (data) {
     return false;
 }
 
+// Save the purchased coupons after a successful payment
 module.exports.saveOrder = async function (email, data) {
     await BuyerSchema.updateOne({ email: email }, { next: data, bought: true });
 }
 
+// Check if the user has already bought the coupons for the coming week
 module.exports.boughtNextWeek = async function (email) {
     await module.exports.getBuyer(email);
     const Buyer = await BuyerSchema.findOne({ email: email });
     return Buyer.bought;
 }
 
+// Returns details of all the users
 module.exports.allBuyers = async function () {
     const Buyers = await BuyerSchema.find({});
     return Buyers;

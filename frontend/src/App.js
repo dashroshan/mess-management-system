@@ -1,12 +1,16 @@
+// Modules
 import { useEffect } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import { Layout } from 'antd';
 
+// Utilities
 import AnimationLayout from './utility/routeAnimation';
 import RemoveLoader from './utility/removeLoader';
 
+// Components
 import MenuBar from './components/MenuBar';
 
+// Route Pages
 import QRCodePage from './routes/QRCode';
 import SchedulePage from './routes/Schedule';
 import PurchaseHistoryPage from './routes/PurchaseHistory';
@@ -16,6 +20,7 @@ import TotalMealsPage from './routes/TotalMeals';
 import ScanQRPage from './routes/ScanQR';
 
 export default function App() {
+    // Removes the loader after the site has been fully loaded
     useEffect(RemoveLoader, []);
 
     return (

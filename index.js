@@ -40,11 +40,13 @@ app.use(
 app.use(passport.initialize());
 app.use(passport.session());
 
+// Check authentication for admin endpoints
 app.use('/api/admin/:all', (req, res, next) => {
     if (req.isAuthenticated() && req.user?.email === process.env.ADMIN) next();
     else res.sendStatus(401);
 });
 
+// Check authentication for user endpoints
 app.use('/api/user/:all', (req, res, next) => {
     if (req.isAuthenticated()) next();
     else res.sendStatus(401);

@@ -1,15 +1,17 @@
-const compression = require("compression");
+// Import required modules
 const express = require("express");
-const passport = require("passport");
 const router = express.Router();
 const Razorpay = require('razorpay');
 
+// Import database models
 const Buyer = require('../models/Buyer');
 const Time = require('../models/Time');
 const Order = require('../models/Order');
+
+// Import RazorPay payment validator
 var { validatePaymentVerification } = require('razorpay/dist/utils/razorpay-utils');
 
-
+// Get the user secret and meals purchased
 router.get(
     "/data",
     async (req, res) => {
@@ -17,6 +19,7 @@ router.get(
     }
 );
 
+// Reset the user secret
 router.get(
     "/resetSecret",
     async (req, res) => {
@@ -24,6 +27,7 @@ router.get(
     }
 );
 
+// Check if the user's coupon is valid for the current day and meal
 router.post(
     "/checkCoupon",
     async (req, res) => {
@@ -31,6 +35,7 @@ router.post(
     }
 );
 
+// Check if the user has already bought coupons for the next week
 router.get(
     "/boughtNextWeek",
     async (req, res) => {
@@ -38,6 +43,7 @@ router.get(
     }
 );
 
+// Check if the payment throught RazorPay is successful
 router.post(
     "/checkOrder",
     async (req, res) => {
@@ -50,6 +56,7 @@ router.post(
     }
 );
 
+// Create a RazorPay order and send the order id to frontend
 router.post(
     "/createOrder",
     async (req, res) => {

@@ -1,3 +1,5 @@
+// This allows a smooth fading transition between different pages of the site
+
 import { motion } from "framer-motion";
 import { useLocation, Outlet } from 'react-router-dom';
 
