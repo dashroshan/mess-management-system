@@ -7,6 +7,8 @@
 - Roshan Dash (Developer)
 - Subhajit Chatterjee (UI/UX, Documentation)
 
+### ▶️ [View it on YouTube](https://www.youtube.com/watch?v=QqCdYTh8L7o)
+
 ## 🧱 PROBLEM STATEMENT
 
 **D3H05**
