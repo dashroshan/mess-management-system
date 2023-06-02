@@ -1,4 +1,4 @@
-# [MESS PORTAL](https://mess.roshan.cyou)
+# [MESS PORTAL](https://mess.dashroshan.com)
 
 [**A D3 Fest Hackathon submission**](https://d3fest.tech)
 
